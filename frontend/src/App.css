@@ -1,0 +1,63 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 600px;
+}
+
+.dashboard-content {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.dashboard-content h1 {
+  color: #667eea;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.user-info {
+  background: #f7f9fc;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 30px 0;
+  text-align: left;
+}
+
+.user-info p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.user-info strong {
+  color: #667eea;
+  margin-right: 10px;
+}
+
+.logout-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+}
