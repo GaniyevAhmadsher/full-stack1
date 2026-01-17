@@ -5,10 +5,9 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   
   // CORS sozlamalari - React frontend bilan ishlash uchun
-  app.enableCors({
-    origin: 'http://localhost:3000', // React dev server
-    credentials: true,
-  });
+  // Docker (Nginx proxy) ishlaganda frontend bir origin bo'ladi va CORS deyarli kerak bo'lmaydi.
+  // Dev/POSTMAN uchun esa origin: true qulay (kelgan origin'ni ruxsat beradi).
+  app.enableCors({ origin: true, credentials: true });
 
   const port = process.env.PORT || 3001;
   await app.listen(port);

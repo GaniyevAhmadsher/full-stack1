@@ -26,7 +26,9 @@ const Login = ({ onLoginSuccess }) => {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:3001/auth/login", {
+      // Dev: Vite proxy (/api -> http://localhost:3001)
+      // Docker: Nginx proxy (/api -> backend:3001)
+      const response = await axios.post("/api/auth/login", {
         email: formData.email,
         password: formData.password,
       });

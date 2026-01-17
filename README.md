@@ -137,6 +137,19 @@ npm run build
 npm run preview
 ```
 
+## 🐳 Docker (Multi-container)
+
+Loyihani Docker orqali ishga tushirish:
+
+```bash
+docker compose up --build
+```
+
+- Frontend: `http://localhost:3000`
+- Backend: `http://localhost:3001`
+
+Frontend backend’ga `"/api"` orqali ulanadi (Docker’da Nginx proxy, dev’da Vite proxy).
+
 ## 🔒 Xavfsizlik
 
 ⚠️ **Eslatma:** Bu demo loyiha. Production uchun quyidagilarni qo'shing:

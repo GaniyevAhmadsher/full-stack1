@@ -1,0 +1,9 @@
+**/node_modules
+**/dist
+**/.vite
+**/coverage
+**/.nyc_output
+.git
+.idea
+.vscode
+*.log
